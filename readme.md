@@ -31,9 +31,14 @@ password: Required, minimum 6 characters.
 The response body will be sent as JSON with the following structure:
 ```json
 {
-    "token": "generatedTokenHere",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
     "user": {
-        // User object data
+        "_id": "64d2fc9f84badc0012345678",
+        "fullname": {
+            "firstname": "John",
+            "lastname": "Doe"
+        },
+        "email": "john@example.com"
     }
 }
 ```
